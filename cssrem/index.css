@@ -1,0 +1,534 @@
+/*
+ * time @ 2016.8.13
+ * autor@ Mr.He
+ * content@index.html style
+*/
+html,body{
+    height: 100%;
+}
+section{
+    height: 100%;
+    display: none;
+}
+.logo{
+    position: absolute;
+    width: 2.32rem;
+    height: 0.98667rem;
+    background: url("../image/logo.png") no-repeat center center;
+    background-size: 100%;
+    text-indent: -999em;
+    top: 0.2rem;
+    left: 0.2rem;
+    z-index: 3;
+}
+/* 第一屏 */
+.index{
+    background: url("../image/bg.jpg") no-repeat center center;
+    background-size: 100%;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 4.40001rem;
+}
+.one_title{
+    width: 6.62667rem;
+    height: 7.16rem;
+    margin: 0 auto;
+    position: relative;
+    background: url("../image/title.png") no-repeat center center;
+    background-size: 100%;
+}
+.one_title button{
+    width: 1.7rem;
+    height: 1.7rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.go_active{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 1.06667rem;
+    text-align: center;
+    font-size: 0.53334rem;
+    /*font-family: "方正兰亭";*/
+    font-weight: bold;
+    color: #017c8b;
+}
+
+
+/* video play */
+.play_video{
+    position: relative;
+}
+.two_btn{
+    position: absolute;
+    width: 0.98667rem;
+    top: 0.26667rem;
+    right: 0.26667rem;
+    z-index: 3;   
+}
+.play_video iframe{
+    width: 100%;
+    height: 100%;
+}
+.mouse{
+    width: 4.90667rem;
+    height: 4rem;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    margin: -2rem 0 0 -2.45334rem;
+    overflow: hidden;
+}
+
+/* video_choose */
+.video_choose{
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    display: none;
+}
+.same_bg{
+    background: url("../image/bg-1.jpg") no-repeat center center;
+    background-size: 100%;
+}
+.choose_close{
+    float: right;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: url("../image/down.png") no-repeat center center;
+    background-size: 100%;
+    margin: 0.26667rem 0.26667rem 1rem 0;
+}
+.choose_title{
+    clear: both;
+    font-size: 0.66667rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.06667rem;
+}
+.choose_box{
+    width: 8.13334rem;
+    margin: 0 auto 1.33334rem;
+    overflow: hidden;
+}
+.mb50{
+    margin-bottom: 0.66667rem;
+}
+.choose_box span{
+    width: 3.66667rem;
+    height: 3.66667rem;
+    overflow: hidden;
+}
+.go_prize{
+    width: 4.33334rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    text-align: center;
+    background: #017c8b;
+    font-size: 0.50667rem;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+/* show prize */
+.showprize{
+    box-sizing: border-box;
+    padding-top: 1.06667rem;
+    /*position: relative;*/
+}
+.prize_title{
+    width: 3.25334rem;
+    height: 1.81334rem;
+    margin: 0 auto 0.4rem;
+    overflow: hidden;
+}
+.prize_text{
+    text-align: center;
+    color: #fff;
+    font-size: 0.5rem;
+    line-height: 0.56001rem;
+    margin-bottom: 0.4rem;
+}
+.prize_choosebox{
+    width: 7.46667rem;
+    margin-bottom: 0.66667rem;
+}
+.prize_choosebox span{
+    width: 3.5rem;
+    height: 3.5rem;
+    position: relative;
+}
+.prize_choosebox .mb50{
+    margin-bottom: 0.53334rem;
+}
+.prize_choosebox em{
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: url("../image/choice.png") center center no-repeat;
+    background-size: 100%;
+    right: 0.26667rem;
+    bottom: 0.26667rem;
+    z-index: 2;
+}
+.prize_next{
+    display: block;
+    width: 4.26667rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    background-color: grey;
+    color: #fff;
+    text-align: center;
+    font-size: 0.53334rem;
+    font-weight: bold;
+    margin: 0 auto;
+}
+.prize_next.active{
+    background-color: #017c8b;
+    color: #fff;
+}
+.seerule{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+.showrule{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    padding-top: 50%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 5;
+}
+.showrule_content{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+.showrule_close{
+    position: absolute;
+    width: 0.44rem;
+    height: 0.44rem;
+    right: 0.2rem;
+    top: 0.2rem;
+    background: url("../image/down.png") no-repeat center center;
+    background-size: 100%;
+}
+
+/* 取名界面 */
+.nameto{
+    color: #fff;
+    position: relative;
+}
+.nameto h3{
+    padding-top: 3.33334rem;
+    text-align: center;
+    font-size: 0.5rem;
+    margin-bottom: 1.46667rem;
+    font-weight: bold;
+}
+.nameto_box{
+    width: 8.66667rem;
+    margin: 0 auto 3.33334rem;
+    overflow: hidden;
+}
+.nameto_box h4{
+    font-size: 0.5rem;
+    margin-bottom: 0.53334rem;
+    font-weight: bold;
+}
+.nameto_box input{
+    border: 0.02667rem solid #fff;
+    display: block;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    font-size: 0.4rem;
+    margin-bottom: 0.4rem;
+    box-sizing: border-box;
+    width: 100%;
+    background: transparent;
+    padding: 0 0.26667rem;
+    color: #fff;
+}
+.nameto_box span{
+    float: right;
+    font-size: 0.35rem;
+}
+.go_list{
+    margin-bottom: 0.8rem;
+    text-align: center; 
+}
+.go_list button{
+    color: #fff;
+    font-size: 0.58rem;
+    font-weight: bold;
+}
+.nameto_cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+    padding-top: 60%;
+}
+.nameto_cover_content{
+    width: 8.66667rem;
+    margin: 0 auto;
+    background: #fff;
+    padding: 0.66667rem 0.4rem 0.8rem;
+    box-sizing: border-box;
+}
+.nameto_cover_content h4{
+    font-size: 0.45334rem;
+    color: #686868;
+    text-align: center;
+    margin-bottom: 0.6rem;
+}
+.nameto_cover_content input{
+    display: block;
+    width: 100%;
+    height: 1.2rem;
+    box-sizing: border-box;
+    border: 0.02667rem solid #b4b4b4;
+    font-size: 0.4rem;
+    padding: 0 0.26667rem;
+    margin-bottom: 0.66667rem;
+}
+
+
+
+/* =================== 列表界面 =================== */
+.list_img{
+    padding: 0.4rem 0 0.2rem;
+    text-align: center;
+}
+.list_img img{
+    width: 3.25334rem;
+}
+.list_title{
+    color: #fff;
+    text-align: center;
+    font-size: 0.48rem;
+    line-height: 0.53334rem;
+    margin-bottom: 0.26667rem;
+}
+.list_box{
+    margin: 0 0.26667rem 0.26667rem;
+}
+.list_box li{
+    overflow: hidden;
+    margin-bottom: 0.21334rem;
+    padding: 0.53334rem 0.33334rem 0.26667rem;
+    background: rgba(255,255,255,0.8);
+}
+.l_num,.l_btn{
+    font-size: 0.4rem;
+    text-align: center;
+    background: #017c8b;
+    color: #fff;
+    font-weight: bold;
+}
+.l_num{
+    margin-top: 0.26667rem;
+    width: 0.73334rem;
+    height: 0.73334rem;
+    border-radius: 50%;
+    line-height: 0.73334rem;
+}
+.l_btn{
+    line-height: 1rem;
+    width: 1.73334rem;
+    height: 1rem;
+    margin-top: 0.13334rem;
+}
+.list_content{
+    margin: 0 2.33334rem 0 1rem;
+}
+.list_content h4{
+    font-size: 0.4rem;
+    color: #027c8b;
+    line-height: 0.53334rem;
+    font-weight: bold;
+}
+.list_content h4 span{
+    font-size: 0.34667rem;
+}
+.list_content p{
+    line-height: 0.4rem;
+    font-size: 0.32rem;
+    color: #656565;
+}
+.l_loading{
+    padding: 0.3rem 0;
+    text-align: center;
+    font-size: 0.4rem;
+    color: #fff;
+}
+.l_loading img{
+    width: 1.06667rem;
+}
+
+.list_section{
+    background-attachment:fixed;
+    min-height: 12rem;
+    min-height: 100%;
+    height: auto;
+}
+/* ============ review page style ============ */
+
+.r_title{
+    background: url("../image/bg-2.jpg") center center no-repeat;
+    background-size: 100%;
+    text-align: center;
+    font-size: 0.5rem;
+    font-weight: bold;
+    line-height: 1.46667rem;
+    color: #fff;
+}
+
+.r_govideo{
+    display: block;
+}
+.review_box{
+    padding: 0.4rem 0.6rem 1.2rem;
+}
+.r_showname{
+    font-size: 0.72rem;
+    color: #464646;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+.r_p1,.r_p1 span{
+    font-size: 0.4rem;
+    color: #767676;
+    text-align: center;
+    margin-bottom: 0.4rem;
+}
+.r_p2{
+    color: #4a4a4a;
+    font-size: 0.42rem;
+    line-height: 0.53334rem;
+    margin-bottom: 0.26667rem;
+}
+.r_scoe{
+    font-size: 0.4rem;
+    font-weight: bold;
+    color: #767676;
+    margin-bottom: 0.8rem;
+}
+.r_scoe span,
+.r_scoe span em{
+    color: #f88c1d;
+    font-weight: bold;
+}
+.r_line{
+    border-bottom: 0.02667rem solid #9e9e9e;
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+.r_line span{
+    width: 2rem;
+    background: #fff;
+    display: block;
+    font-size: 0.37rem;
+    color: #a5a5a5;
+    margin: 0 auto -0.2rem;
+}
+.star{
+    padding-left: 0.34667rem;
+    margin-bottom: 0.33334rem;
+}
+.star li{
+    float: left;
+    width: 1.2rem;
+    height: 1.14667rem;
+    background: url("../image/star-2.png") no-repeat center center;
+    background-size: 100%;
+    margin-right: 0.53334rem;
+}
+.star li:last-child{
+    margin: 0;
+}
+.star li.active{
+    background: url("../image/star.png") no-repeat center center;
+    background-size: 100%;
+}
+.star-txt{
+    font-size: 0.37rem;
+    color: #a5a5a5;
+    text-align: center;
+    margin-bottom: 0.66667rem;
+}
+.r_btns button,
+.r_btns a{
+    width: 4.26667rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.53334rem;
+}
+.r_btns button{
+    color: #fff;
+    background: #a6a6a6;
+}
+.r_btns button.active{
+    color: #fff;
+    background: #017c8b;
+}
+.r_btns a{
+    color: #017c8b;
+    border: 0.10667rem solid #017c8b;
+    line-height: 0.98667rem;
+}
+
+.erweima{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background: rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    padding-top: 3rem;
+}
+.ma_content{
+    width: 6rem;
+    position: relative;
+    margin: 0 auto;
+}
+.ma_close{
+    position: absolute;
+    width: 1.06667rem;
+    height: 1.06667rem;
+    right: 0;
+    top: 0;
+}
+
+.lapiao{
+    position: absolute;
+    width: 1.73rem;
+    height: 1.34rem;
+    right: 0.067rem;
+    top: 0.067rem;
+    background: url("../image/lapiao.gif") no-repeat center center;
+    background-size: 100%;
+}
