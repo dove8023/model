@@ -2,7 +2,7 @@
  * @Author: Mr.He 
  * @Date: 2018-03-19 21:29:59 
  * @Last Modified by: Mr.He
- * @Last Modified time: 2018-03-20 15:03:00
+ * @Last Modified time: 2018-03-20 15:04:34
  * @content what is the content of this file. */
 
 var timerCountDown = {
@@ -32,7 +32,6 @@ var timerCountDown = {
         str = String(str);
         return str.length < 2 ? '0' + str : str;
     },
-    timer: null,
 
     /* number 单位秒 */
     init: function (number, finishFn, viewChange) {
