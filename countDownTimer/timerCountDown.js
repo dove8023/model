@@ -2,7 +2,7 @@
  * @Author: Mr.He 
  * @Date: 2018-03-19 21:29:59 
  * @Last Modified by: Mr.He
- * @Last Modified time: 2018-03-20 10:02:39
+ * @Last Modified time: 2018-03-20 14:58:54
  * @content what is the content of this file. */
 
 let timerCountDown = {
@@ -32,23 +32,27 @@ let timerCountDown = {
         str = String(str);
         return str.length < 2 ? '0' + str : str;
     },
-    timer: null,
 
     /* number 单位秒 */
     init(number, finishFn, viewChange) {
-        this.timer = setInterval(() => {
+
+        let timer = setInterval(() => {
             if (number < 0) {
-                this.timer = clearInterval(this.timer);
+                timer = clearInterval(timer);
                 return finishFn && finishFn();
             }
             let timerData = this.computeTimer(number);
             number--;
 
             return viewChange ? viewChange(timerData) : this.changeDom(timerData);
-        }, 1000);
+        }, 50);
     }
 }
 
 timerCountDown.init(62, () => {
+    console.log("timer down")
+});
+
+timerCountDown.init(620, () => {
     console.log("timer down")
 });

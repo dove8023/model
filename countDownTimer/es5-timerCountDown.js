@@ -2,7 +2,7 @@
  * @Author: Mr.He 
  * @Date: 2018-03-19 21:29:59 
  * @Last Modified by: Mr.He
- * @Last Modified time: 2018-03-20 14:52:49
+ * @Last Modified time: 2018-03-20 15:03:00
  * @content what is the content of this file. */
 
 var timerCountDown = {
@@ -37,9 +37,9 @@ var timerCountDown = {
     /* number 单位秒 */
     init: function (number, finishFn, viewChange) {
         var self = this;
-        this.timer = setInterval(function () {
+        var timer = setInterval(function () {
             if (number < 0) {
-                self.timer = clearInterval(self.timer);
+                timer = clearInterval(timer);
                 return finishFn && finishFn();
             }
             var timerData = self.computeTimer(number);
@@ -50,6 +50,15 @@ var timerCountDown = {
     }
 }
 
-timerCountDown.init(100, () => {
-    console.log("timer down")
+timerCountDown.init(100, function () {
+    console.log("timer1 down")
+});
+
+
+
+timerCountDown.init(200, function () {
+    console.log("timer2 down")
+}, function (data) {
+    var str = `${data.days}天 ${data.hours}小时 ${data.minutes}分钟 ${data.seconds}秒`;
+    document.getElementById("timer2").innerHTML = str;
 });
